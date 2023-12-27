@@ -22,7 +22,7 @@ const parserOptions = {
 // ------------------------------------------------------------------------------
 
 const ruleTester = new RuleTester({ parserOptions });
-ruleTester.run('jsx-no-comment-textnodes', rule, {
+ruleTester.run('jsx-no-inline-comment-textnodes', rule, {
   valid: parsers.all([
     {
       code: `

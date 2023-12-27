@@ -26,7 +26,7 @@ function checkText(node, context) {
           fix(fixer) {
             return fixer.replaceText(
               node,
-              `{/*${rawValue.replace(/^\s*\/\//gm, '')}*/}`
+              `{/*${rawValue.replace(/^\s*\/\//gm, '')}*/}\n`
             );
           },
         }
